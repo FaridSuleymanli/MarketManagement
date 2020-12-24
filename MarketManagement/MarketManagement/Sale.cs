@@ -6,59 +6,59 @@ using System.Threading.Tasks;
 
 namespace MarketIdareEtmeSistemi
 {
-    class Sale : ISatislar
+    class Sale : ISatislar //Satis klasi yaradib interface-den miras aliriq
     {
         private static int _id;
         public readonly int Id;
         public double SalePrice { get; set; }
-        public SaleItem[] salearr = new SaleItem[0];
-        public Product Prod { get; set; }
-        public SaleItem Sell { get; set; }
-        public DateTime Date;
+        public SaleItem[] salearr = new SaleItem[0]; //saleitem type-dan yeni bir array yaradiriq
+        public Product Prod { get; set; } //product klasindan bir property yaradiriq
+        public SaleItem Sell { get; set; } //ve saleitem klasindan bir property
+        public DateTime Date; //tarix vermek ucun field
 
-        public Sale()
+        public Sale() //bos constructor veriirik id-ni set etmek ucun
         {
             _id++;
             Id = _id;
-        }
-        public Sale(double saleprice, DateTime date, Product prod) : this()
+        }   //Yeni constructor yaradib parametrlerini veririk
+        public Sale(double saleprice, DateTime date, Product prod) : this() //bos constructoru isletmek ucun
         {
             SalePrice = saleprice;
             Date = date;
             Prod = prod;
         }
         public override string ToString()
-        {
+        {    //ekranan cixacaq deyerleri stringe cevirib veririk
             return $"{Id} {SalePrice} {Date} {Prod.Categ}";
         }
-        public void Satislar(SaleItem newSale)
-        {
+        public void Satislar(SaleItem newSale) 
+        {    //Arrayin size-ni 1 artitiriq
             Array.Resize(ref salearr, salearr.Length + 1);
             salearr[salearr.Length - 1] = newSale;
         }
         public void Showlist()
-        {
+        {   //sale listimizi gosterir
             foreach (SaleItem item in salearr)
             {
                 System.Console.WriteLine(item);
             }
         }
-        public void AddSale()
+        public void AddSale() //yeni bir satis elave edirik
         {
             Console.WriteLine("Yeni mehsul elave etmek ucun, lazim olan melumatlari daxil edin");
-            int code = Convert.ToInt32(Console.ReadLine());
-            int count = Convert.ToInt32(Console.ReadLine());
+            int code = Convert.ToInt32(Console.ReadLine()); //user input
+            int count = Convert.ToInt32(Console.ReadLine()); //user input
             Console.WriteLine("Yeni mehsul elave edildi!");
         }
-        public void SaleReturn()
+        public void SaleReturn() //satisin geri qaytarilmasi metodu
         {
-            int id = Convert.ToInt32(Console.ReadLine());
-            int count = Convert.ToInt32(Console.ReadLine());
-            foreach (SaleItem item in salearr)
+            int id = Convert.ToInt32(Console.ReadLine()); //user input
+            int count = Convert.ToInt32(Console.ReadLine()); //user input
+            foreach (SaleItem item in salearr) //foreach-e saliriq ve eger verdiyimiz id, item id-e eyni olsa, hemin mehsulu satisdan qaytaririq
             {
                 if (item.Id == id)
                 {
-                    item.Count -= count;
+                    item.Count -= count; //satis sayi azalir
                     System.Console.WriteLine($"Id-si {id} olan mehsulun satisi geri qaytarildi!");
                 }
                 else
@@ -69,13 +69,13 @@ namespace MarketIdareEtmeSistemi
             }
         }
         public void ReturnTotalSale()
-        {
-            int id = Convert.ToInt32(Console.ReadLine());
-            foreach (SaleItem item in salearr)
+        {   //butun satisin qayitmasi
+            int id = Convert.ToInt32(Console.ReadLine()); //user input
+            foreach (SaleItem item in salearr) //foreach-e saliriq ve eger verdiyimiz id, item id-e eyni olsa, hemin mehsulun hamisini satisdan qaytaririq
             {
                 if (item.Id == id)
                 {
-                    item.Count = 0;
+                    item.Count = 0; //satis sayi 0 olur
                 }
                 else
                 {
