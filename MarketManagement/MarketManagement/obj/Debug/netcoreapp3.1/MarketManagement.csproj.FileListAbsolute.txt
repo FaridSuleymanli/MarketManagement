@@ -1,0 +1,13 @@
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.exe
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.deps.json
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.runtimeconfig.json
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.runtimeconfig.dev.json
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.dll
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.pdb
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.dll
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.pdb
+C:\Users\ASUS\source\repos\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.genruntimeconfig.cache
