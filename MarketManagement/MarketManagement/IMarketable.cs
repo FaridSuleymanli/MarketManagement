@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarketIdareEtmeSistemi
 {
-    interface ISatislar
+    interface ISatislar //satislarin interface-i
     {
         void Satislar(SaleItem newSale);
         void AddSale();
@@ -17,7 +17,7 @@ namespace MarketIdareEtmeSistemi
         //void BetweenPrice();
         //int SaleNumber(int n);
         }
-        interface IProducts
+        interface IProducts //productlarin interface-i
         {
             void Showlist();
             void AddProduct();
